@@ -21,7 +21,6 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 
         Session session= sessionFactory.getCurrentSession();
 
-
         Query<Employee> query=session.createQuery("from Employee "
                 ,Employee.class);
         List<Employee> allEmloyees = query.getResultList();
